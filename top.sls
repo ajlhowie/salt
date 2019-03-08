@@ -1,4 +1,4 @@
 base:
-  'G@os:windows':
+  'os:windows':
     - match: grain
     - Windows.TestFolder

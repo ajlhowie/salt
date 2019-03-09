@@ -1,3 +1,4 @@
+
 #Remove keys from disconnected clients
-salt-run manage.down removekeys=True
+sudo salt-run manage.down removekeys=True
 

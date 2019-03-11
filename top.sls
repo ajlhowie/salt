@@ -1,4 +1,7 @@
 base:
   'os:windows':
     - match: grain
-    - Windows.TestFolder
+    - Windows.Defaults
+  'os:Amazon':
+    - match: grain
+    - AWSLinux.Defaults

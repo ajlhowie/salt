@@ -10,4 +10,8 @@ create_test_folder:
 install_nmap:
   pkg.latest:
     - name: nmap
+
+install_nano:
+  pkg.latest:
+    - name: nano
     

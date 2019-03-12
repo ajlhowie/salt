@@ -6,3 +6,8 @@ create_test_folder:
     - group: ec2-user
     - dir_mode: 755
     - file_mode: 644
+  
+install_nmap:
+  pkg.latest:
+    - name: nmap
+    

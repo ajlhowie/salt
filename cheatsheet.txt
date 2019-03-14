@@ -11,3 +11,9 @@ sudo salt "*" grains.get os
 
 #Ping minions
 sudo salt "*" test.ping
+
+### Keys ###
+
+#List all minion keys 
+sudo salt-key -L
+

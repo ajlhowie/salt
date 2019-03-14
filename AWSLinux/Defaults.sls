@@ -14,4 +14,8 @@ install_nmap:
 install_nano:
   pkg.latest:
     - name: nano
+
+install_python3:
+  pkg.latest:
+    - name: python3
     

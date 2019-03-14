@@ -2,3 +2,7 @@
 #Remove keys from disconnected clients
 sudo salt-run manage.down removekeys=True
 
+### Grains ###
+
+#Get specific grain from all minions
+sudo salt "*" grains.get os 

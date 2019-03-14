@@ -5,4 +5,9 @@ sudo salt-run manage.down removekeys=True
 ### Grains ###
 
 #Get specific grain from all minions
-sudo salt "*" grains.get os 
+sudo salt "*" grains.get os
+
+### Testing ###
+
+#Ping minions
+sudo salt "*" test.ping

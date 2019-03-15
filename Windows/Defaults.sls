@@ -38,3 +38,14 @@ lgpo_policy:
   lgpo.set:
     - computer_policy:
         Maximum password age: 60
+
+snmp-agent-settings:
+    win_snmp.agent_settings:
+        - contact: Aaron Howie
+        - location: Mondo
+
+snmp-community-names:
+    win_snmp.community_names:
+        - communities:
+            public: Read Only
+            

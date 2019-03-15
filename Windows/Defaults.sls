@@ -25,3 +25,7 @@ install_nmap:
 install_notepadplusplus:
   chocolatey.installed:
     - name: notepadplusplus
+
+disable_firewall:
+  win_firewall.disabled:
+    - name: allprofiles

@@ -34,6 +34,10 @@ install_telnet_client:
   dism.feature_installed:
     - name: TelnetClient
 
+install_snmp_client:
+  dism.feature_installed:
+    - name: SNMP
+
 lgpo_policy:
   lgpo.set:
     - computer_policy:

@@ -33,3 +33,8 @@ disable_firewall:
 install_telnet_client:
   dism.feature_installed:
     - name: TelnetClient
+
+lgpo_policy:
+  lgpo.set:
+    - computer_policy:
+        Maximum password age: 60

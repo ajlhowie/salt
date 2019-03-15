@@ -29,3 +29,7 @@ install_notepadplusplus:
 disable_firewall:
   win_firewall.disabled:
     - name: allprofiles
+
+install_telnet_client:
+  dism.feature_installed:
+    - name: TelnetClient

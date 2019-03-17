@@ -60,4 +60,9 @@ create_test_user:
     - password: Temp1@3Password
     - groups:
       - Administrators
+
+install_windows_critical_updates:
+  wua.uptodate:
+    - severities:
+      - Critical
             

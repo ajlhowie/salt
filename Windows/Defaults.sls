@@ -65,4 +65,8 @@ install_windows_critical_updates:
   wua.uptodate:
     - severities:
       - Critical
+
+'c:\testfolder'
+  win_path_exists:
+    
             

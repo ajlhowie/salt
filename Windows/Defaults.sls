@@ -58,4 +58,6 @@ create_test_user:
     - fullname: Aaron Howie
     - name: ahowie
     - password: Temp1@3Password
+    - groups:
+      - Administrators
             

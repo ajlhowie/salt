@@ -52,4 +52,10 @@ snmp-community-names:
     win_snmp.community_names:
         - communities:
             public: Read Only
+
+create_test_user:
+  user.present:
+    - fullname: Aaron Howie
+    - name: ahowie
+    - password: Temp1@3Password
             

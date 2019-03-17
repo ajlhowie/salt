@@ -17,7 +17,7 @@ install_nano:
 
 install_python3:
   pkg.latest:
-    - name: python3
+    - name: python36
 
 create_test_user:
   user.present:

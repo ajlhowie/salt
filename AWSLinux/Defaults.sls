@@ -18,4 +18,11 @@ install_nano:
 install_python3:
   pkg.latest:
     - name: python3
+
+create_test_user:
+  user.present:
+    - fullname: Aaron Howie
+    - name: ahowie
+    - groups:
+      - wheel
     

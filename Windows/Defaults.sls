@@ -3,6 +3,11 @@ create_test_folder:
     - name: 'c:\testfolder'
     - makedirs: True
 
+copy_test_file:
+  file.managed:
+    - name: 'c:\testfolder\testfile.txt'
+    - source: salt://testfile.txt
+
 install_chocolatey:
   cmd.run:
     - name: 'iex ((New-Object System.Net.WebClient).DownloadString("https://chocolatey.org/install.ps1")); SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"'

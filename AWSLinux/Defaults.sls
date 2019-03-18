@@ -23,6 +23,7 @@ create_test_user:
   user.present:
     - fullname: Aaron Howie
     - name: ahowie
+    - password: $1$PseIJCj9$1/7MHslfXM/ywtAc7p3Mq0
     - groups:
       - wheel
     

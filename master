@@ -1011,7 +1011,9 @@ pillar_roots:
 ######        Reactor Settings        #####
 ###########################################
 # Define a salt reactor. See https://docs.saltstack.com/en/latest/topics/reactor/
-#reactor: []
+reactor:
+  - 'salt/minion/*/start':
+    - /srv/reactor/start.sls
 
 #Set the TTL for the cache of the reactor configuration.
 #reactor_refresh_interval: 60

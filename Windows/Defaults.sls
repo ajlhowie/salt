@@ -67,6 +67,6 @@ install_windows_critical_updates:
       - Critical
 
 'c:\testfolder'
-  win_path_exists:
+  win_path_exists
     
             

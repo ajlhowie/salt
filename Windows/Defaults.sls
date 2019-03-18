@@ -66,7 +66,7 @@ install_windows_critical_updates:
     - severities:
       - Critical
 
-'c:\testfolder'
+'c:\testfolder':
   win_path_exists
     
             

@@ -1292,3 +1292,6 @@ reactor:
 # use OS defaults, typically 75 seconds on Linux, see
 # /proc/sys/net/ipv4/tcp_keepalive_intvl.
 #tcp_keepalive_intvl: -1
+
+presence_events: True
+state_events: True

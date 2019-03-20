@@ -14,6 +14,14 @@ copy_test_file:
     - user: ec2-user
     - group: ec2-user
     - mode: 644
+
+copy_beacon_conf:
+  file.managed:
+    - name: '/etc/salt/minion.d/beacons.conf'
+    - source: salt://beacons.conf
+    - user: ec2-user
+    - group: ec2-user
+    - mode: 644
   
 install_nmap:
   pkg.latest:

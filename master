@@ -1014,6 +1014,8 @@ pillar_roots:
 reactor:
   - 'salt/minion/*/start':
     - /srv/reactor/start.sls
+  - '*/customevent/powershell/eventid/4624'
+    - /srv/reactor/login_detected.sls
 
 #Set the TTL for the cache of the reactor configuration.
 #reactor_refresh_interval: 60

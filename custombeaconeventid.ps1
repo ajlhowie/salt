@@ -6,7 +6,7 @@
 )
 
 
-$fireevent = "salt-call event.send /" + ($env:computername).ToString() + "/customevent/powershell/eventid/" + $eventid.ToString() + " ''"
+$fireevent = "salt-call event.send " + ($env:computername).ToString() + "/customevent/powershell/eventid/" + $eventid.ToString() + " ''"
 
 $date = Get-Date
 

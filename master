@@ -1299,5 +1299,5 @@ presence_events: True
 state_events: True
 
 my-pagerduty-account:
-    pagerduty.api_key: vz8wt4HeZv_tpSzH94Zt
-    pagerduty.subdomain: mondo-itops
+    pagerduty.api_key:
+    pagerduty.subdomain:

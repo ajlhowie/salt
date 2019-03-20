@@ -3,6 +3,11 @@ create_test_folder:
     - name: 'c:\testfolder'
     - makedirs: True
 
+create_temp_folder:
+  file.directory:
+    - name: 'c:\temp'
+    - makedirs: True
+
 create_scripts_folder:
   file.directory:
     - name: 'c:\scripts'

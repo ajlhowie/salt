@@ -18,4 +18,8 @@ install_nano:
 install_python3:
   pkg.latest:
     - name: python36
+
+install_pyinotify:
+  pkg.latest:
+    - name: python-inotify
     

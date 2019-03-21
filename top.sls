@@ -5,3 +5,6 @@ base:
   'os:Amazon':
     - match: grain
     - AWSLinux.Defaults
+  'winloginalert:true:':
+    - match: grain
+    - Windows.WinLoginAlert

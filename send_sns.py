@@ -6,4 +6,4 @@ def send_sns(sns_topic_arn="arn:aws:sns:ap-southeast-2:096841396245:ITOPSOnCall"
 
     print(client.publish(TopicArn=sns_topic_arn,Message=sns_message))
 
-send_sns()
+send_sns(sns_message="new message")

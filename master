@@ -537,8 +537,8 @@
 # Manage how master side modules are loaded.
 
 # Add any additional locations to look for master runners:
-#runner_dirs: []
-
+runner_dirs:
+  - /var/lib/salt/runners
 # Add any additional locations to look for master utils:
 #utils_dirs: []
 

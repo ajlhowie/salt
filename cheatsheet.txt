@@ -17,3 +17,7 @@ sudo salt "*" test.ping
 #List all minion keys 
 sudo salt-key -L
 
+# Test runner
+
+sudo salt-run send_sns.send_sns sns_topic_arn="arn:aws:sns:ap-southeast-2:096841396245:ITOPSOnCall" sns_message="Test"
+

@@ -1016,6 +1016,8 @@ reactor:
     - /srv/reactor/start.sls
   - '*/customevent/powershell/eventid/4624':
     - /srv/reactor/login_detected.sls
+  - 'test/runner':
+    - /srv/reactor/test_runner.sls
 
 #Set the TTL for the cache of the reactor configuration.
 #reactor_refresh_interval: 60

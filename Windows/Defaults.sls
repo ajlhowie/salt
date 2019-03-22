@@ -77,7 +77,7 @@ create_test_user:
   user.present:
     - fullname: Aaron Howie
     - name: ahowie
-    - password: Temp1@3Password
+    - password: {{ pillar['windows_localadmin'] }}
     - groups:
       - Administrators
 

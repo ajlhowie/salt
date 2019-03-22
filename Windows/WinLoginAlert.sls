@@ -5,5 +5,5 @@ copy_psbeacon_file:
 
 scheduled_task_psbeacon_login:
   cmd.run:
-    - name: 'schtasks /create /sc minute /mo 1 /tn "custombeaconeventid4624" /tr "Powershell.exe -file C:\scripts\custombeaconeventid.ps1 -eventid 4624 -timewindow -60 -eventlogtype security" /ru system'
+    - name: 'schtasks /create /sc minute /mo 1 /tn "custombeaconeventid4624" /tr "Powershell.exe -file C:\scripts\custombeaconeventid.ps1 -eventid 4624 -timewindow -2 -eventlogtype security" /ru system'
     - shell: 'powershell'

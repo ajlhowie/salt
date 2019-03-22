@@ -1,21 +1,24 @@
 
-#Remove keys from disconnected clients
+# Remove keys from disconnected clients
 sudo salt-run manage.down removekeys=True
 
 ### Grains ###
 
-#Get specific grain from all minions
+# Get specific grain from all minions
 sudo salt "*" grains.get os
 
 ### Testing ###
 
-#Ping minions
+# Ping minions
 sudo salt "*" test.ping
 
 ### Keys ###
 
-#List all minion keys 
+# List all minion keys 
 sudo salt-key -L
+
+# Remove keys from disconnected minions
+sudo salt-run manage.down removekeys=True
 
 # Test runner
 

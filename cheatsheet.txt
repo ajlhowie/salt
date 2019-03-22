@@ -19,5 +19,5 @@ sudo salt-key -L
 
 # Test runner
 
-sudo salt-run send_sns.send_sns sns_topic_arn="arn:aws:sns:ap-southeast-2:096841396245:ITOPSOnCall" sns_message="Test"
+sudo salt-run awscustom.send_sns sns_topic_arn="arn:aws:sns:ap-southeast-2:096841396245:ITOPSOnCall" sns_subject="Login detected" sns_message="Test" sns_source="local"
 

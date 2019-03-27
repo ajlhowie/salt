@@ -8,3 +8,6 @@ base:
   'winloginalert:true':
     - match: grain
     - Windows.WinLoginAlert
+  'saltmaster:true':
+    - match: grain
+    - SaltMaster.Default

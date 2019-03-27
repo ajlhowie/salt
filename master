@@ -1,4 +1,4 @@
-##### Primary configuration settings #####
+##### Primary configuration settings ##### Aaron
 ##########################################
 # This configuration file is used to manage the behavior of the Salt Master.
 # Values that are commented out but have an empty line after the comment are

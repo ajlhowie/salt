@@ -1,0 +1,21 @@
+runner_dirs:
+  - /var/lib/salt/runners
+
+file_roots:
+   base:
+     - /srv/salt/
+
+pillar_roots:
+  base:
+    - /srv/pillar
+
+reactor:
+  - 'salt/minion/*/start':
+    - /srv/reactor/start.sls
+  - '*/customevent/powershell/eventid/4624':
+    - /srv/reactor/login_detected.sls
+  - 'test/runner':
+    - /srv/reactor/test_runner.sls
+
+presence_events: True
+state_events: True
